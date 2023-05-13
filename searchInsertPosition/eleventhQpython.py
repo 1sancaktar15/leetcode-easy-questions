@@ -11,7 +11,7 @@ class Solution:
             if target == nums[mid]:
                 return mid
             
-            # in this case we searching to the right so we can update our left pointer
+            # in this case we searching to the right so we can update our left pointer, update boundaries
             if target > nums[mid]:
                 l = mid + 1
             # in this case we searching to the left so we can update our right pointer
