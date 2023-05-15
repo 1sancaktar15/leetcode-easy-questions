@@ -1,0 +1,20 @@
+/*I start from the end and go to the head,
+the moment I coincide with the space character,
+I return the number of characters that have come to that moment.
+*/
+
+public class Solution {
+    public int LengthOfLastWord(string s) {
+
+        var Length = 0;
+        s = s.Trim();//trim end space character
+
+        for(var i = s.Length -1 ; i >= 0 ; i--){
+            if(s[i] == ' '){
+                return Length;
+            }
+            Length++;
+        }
+        return Length;
+    }
+}
