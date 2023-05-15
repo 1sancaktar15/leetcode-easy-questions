@@ -7,7 +7,7 @@ public class Solution {
     public int LengthOfLastWord(string s) {
 
         var Length = 0;
-        s = s.Trim();//trim end space character
+        s = s.Trim();//trim space characters at the end and begining. 
 
         for(var i = s.Length -1 ; i >= 0 ; i--){
             if(s[i] == ' '){
